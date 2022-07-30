@@ -1,0 +1,19 @@
+<section class="section">
+    <h1 class="section-heading text-center mb-5 mt-4 black-text wow fadeIn" data-wow-delay="0.2s">Poop</h1>
+
+    <div class="row wow fadeIn" data-wow-delay=".5s">
+        <div class="col-md-12">
+            <div id="mdb-lightbox-ui">
+                <div class="mdb-lightbox">
+                    {% for img in images %}
+                    <figure class="col-md-4">
+                        <img src="{{img.image.url}}" alt="{{img.alt}}"
+                            class="img-fluid">
+                    </figure>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<h2>dance photos</h2>-->
+</section>
